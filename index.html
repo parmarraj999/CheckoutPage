@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1,
+  maximum-scale=5" />
+  <link rel="icon" href="devchallenges.png" />
+  <link rel="shortcut icon" type="image/x-icon" href="https://devchallenges.io/" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>Checkout Page</title>
+</head>
+
+<body>
+  <div class="container main-container">
+    <nav>Checkout</nav>
+    <div class="form-container">
+      <div class="left-container">
+        <h2>Contact information</h2>
+        <div class="field-box">
+          <h3>E-mail</h3>
+          <div class="input-box">
+            <i class="material-icons">mail</i>
+            <input type="text" placeholder="Enter your email...">
+          </div>
+        </div>
+
+        <div class="field-box">
+          <h3>Phone</h3>
+          <div class="input-box">
+            <i class="material-icons">phone</i>
+            <input type="text" placeholder="Enter your phone...">
+          </div>
+        </div>
+
+
+        <div class="left-container mt3">
+          <h2>Shipping address</h2>
+          <div class="field-box">
+            <h3>Full name</h3>
+            <div class="input-box">
+              <i class="material-icons">account_circle</i>
+              <input type="text" placeholder="Enter your full name...">
+            </div>
+          </div>
+
+          <div class="field-box">
+            <h3>address</h3>
+            <div class="input-box">
+              <i class="material-icons-outlined" style="font-size:30px;">home</i>
+              <input type="text" placeholder="Your address...">
+            </div>
+          </div>
+
+          <div class="field-box">
+            <h3>city</h3>
+            <div class="input-box">
+              <i class="material-icons">apartment</i>
+              <input type="text" placeholder="Your city...">
+            </div>
+          </div>
+
+          <div class="field-box-flex">
+            <div class="field-box">
+              <h3>Country</h3>
+              <div class="input-box">
+                <i class="material-icons-outlined">pin_drop</i>
+                <input type="text" placeholder="Your country...">
+              </div>
+            </div>
+
+            <div class="field-box">
+              <h3>Postal code</h3>
+              <div class="input-box">
+                <i class="material-icons-outlined">flag</i>
+                <input type="text" placeholder="Your postal code...">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="check-text">
+          <input type="checkbox">
+          <p>Save this information for next time</p>
+        </div>
+        <div class="button-container">
+          <button class="btn">Continue</button>
+        </div>
+      </div>
+      <div class="right-container">
+        <div class="box">
+          <div class="img-details">
+            <img src="img/photo1.png" alt="">
+            <div class="details">
+              <h3>vintage Bagpack</h3>
+              <div class="pirce">
+                <h5>$54.99</h5>
+                <h6>$94.99</h6>
+              </div>
+              <div class="range">
+                <p class="incBtn">+</p>
+                <h4 class="count">1</h4>
+                <p class="decBtn">-</p>
+              </div>
+            </div>
+          </div>
+          <div class="img-details m2">
+            <img src="img/photo2.png" alt="">
+            <div class="details">
+              <h3>Levi Shoes</h3>
+              <div class="pirce">
+                <h5>$79.99</h5>
+                <h6>$124.99</h6>
+              </div>
+              <div class="range w">
+                <p class="incBtn">+</p>
+                <h4 class="count">1</h4>
+                <p class="decBtn">-</p>
+              </div>
+            </div>
+          </div>
+          <div class="total-box">
+             <div class="ship-box flex">
+              <h4>Shipping</h4>
+              <p>$19</p>
+             </div>
+             <div class="amount-box flex">
+              <h4>Total</h4>
+              <p>$148.98</p>
+             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <h4>create by <a href="https://github.com/parmarraj999">Raj Parmar</a> - devChallenges.io</h4>
+  </footer>
+</body>
+<script>
+var incBtn = document.querySelectors(".incBtn");
+var decBtn = document.querySelectors(".decBtn");
+var count  = document.querySelectors(".count");
+incBtn.addEventListener('click', incCount);
+decBtn.addEventListener('click', decCount);
+function incCount(){
+  count.innerHTML = 2;
+}
+function decCount(){
+  count.innerHTML = 1;
+}
+</script>
+</html>
+<!-- ------ complete -------  -->
